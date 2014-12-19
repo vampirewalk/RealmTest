@@ -1,8 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '7.0'
-inhibit_all_warnings!
-link_with 'RealmTest', 'RealmTestTests'
-xcodeproj 'RealmTest'
 
-pod 'Realm'
+target 'RealmTest', exclusive: true do
+    pod 'Realm'
+end
+
+target 'RealmTestTests', exclusive: true do
+    pod 'Realm/Headers'
+end

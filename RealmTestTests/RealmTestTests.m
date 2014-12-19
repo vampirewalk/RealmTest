@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import <Realm.h>
+#import <Realm/Realm.h>
 #import "Playlist.h"
 #import "Track.h"
 
